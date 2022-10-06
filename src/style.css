@@ -1,11 +1,96 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url();
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Open Sans, Arial, sans-serif;
 }
-body{
-    background: #121216;
+body {
+  background: #121216;
 }
-p{
-    color: white;
+
+/*Sección 3*/
+.seccion3 {
+  width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.news {
+  display: flex;
+  align-items: center;
+  color: #32323d;
+  width: 100%;
+  justify-content: center;
+}
+.divider-line {
+  height: 2px;
+  width: 70%;
+  background: linear-gradient(
+    270deg,
+    currentColor,
+    currentColor 84.88%,
+    rgba(0, 0, 0, 0)
+  );
+}
+.divider-line:last-of-type {
+  background: linear-gradient(
+    90deg,
+    currentColor,
+    currentColor 84.88%,
+    rgba(0, 0, 0, 0)
+  );
+}
+.divider-text {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: fit-content;
+}
+.newsText {
+  color: white;
+  overflow-wrap: break-word;
+  text-align: center;
+  font-size: 42px;
+}
+.news-text {
+  color: #bebec7;
+  overflow-wrap: break-word;
+  text-align: center;
+  font-size: 14px;
+}
+a {
+  text-align: center;
+  cursor: pointer;
+  width: 600px;
+}
+svg {
+  width: 600px;
+}
+.info-button {
+  text-align: center;
+}
+.more-info {
+  text-transform: uppercase;
+  background-color: white;
+  border-color: white;
+  width: fit-content;
+  color: #32323d;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  min-height: 54px;
+  text-align: center;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq {
+  color: white;
+  font-size: 29px;
 }
