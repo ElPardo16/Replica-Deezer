@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, Open Sans, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background: #121216;
+}
+h1,h2{
+  font-family: 'Mabry Pro', sans-serif;
 }
 
 /*Sección 3*/
@@ -23,6 +26,7 @@ body {
   color: #32323d;
   width: 100%;
   justify-content: center;
+  margin-bottom: 32px;
 }
 .divider-line {
   height: 2px;
@@ -44,12 +48,11 @@ body {
 }
 .divider-text {
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   padding-left: 16px;
   padding-right: 16px;
   width: fit-content;
-  margin-bottom: 32px;
 }
 .newsText {
   color: white;
@@ -57,21 +60,104 @@ body {
   text-align: center;
   font-size: 42px;
   margin-bottom: 24px;
+  line-height: 1.1;
 }
 .news-text {
   color: #bebec7;
   overflow-wrap: break-word;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
 }
-a {
-  text-align: center;
+
+.graphic {
   cursor: pointer;
-  width: 600px;
+  padding: 24px 0px 24px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 278px;
 }
-svg {
-  width: 600px;
+.green-circle {
+  z-index: 2;
+  border-radius: 100%;
+  width: 109.54px;
+  height: 109.54px;
+  background: linear-gradient(
+    220deg,
+    rgb(164, 223, 98) 20%,
+    rgba(102, 184, 109, 1) 48%,
+    rgba(76, 166, 112, 1) 76%,
+    rgba(41, 146, 119, 1) 99%
+  );
+  border: none;
+  align-items: center;
+  filter: drop-shadow(0px 0px 51px #b5c59f);
 }
+.green-circle img {
+  width: 40%;
+  filter: drop-shadow(-3px 7px 10px #383636);
+}
+.waves {
+  width: 153px;
+  height: 24px;
+  align-items: center;
+  background: transparent;
+  border: none;
+  z-index: 1;
+  position: relative;
+}
+.waves img {
+  width: 100%;
+}
+.content-circle{
+  display: flex;
+  justify-content: center;
+}
+.rainbow-circle {
+  z-index: 5;
+  border-radius: 100%;
+  width: 109.54px;
+  height: 109.54px;
+  background:linear-gradient(135deg, rgba(255,142,19,1) 20%, rgba(255,56,34,1) 28%, rgba(255,35,52,1) 34%, rgba(208,10,133,1) 45%, rgba(130,38,207,1) 61%, rgba(62,122,169,1) 72%, rgba(40,149,157,1) 82%, rgba(24,168,148,1) 93%);
+  border: none;
+}
+.rainbow-circle img {
+  width: 50%;
+  filter: drop-shadow(0px 6px 10px #383636);
+}
+.rainbow-circle-shadow-pink {
+  z-index: 1;
+  position: absolute;
+  background:linear-gradient(364deg, rgba(230, 39, 65, 0.692) 36%, rgba(245,214,175,0.5018382352941176) 81%);
+  width: 139.54px;
+  height: 139.54px;
+  border-radius: 100%;
+  border: none;
+  filter: blur(35px);
+}
+.rainbow-circle-shadow-orange{
+  background:linear-gradient(214deg, rgba(253,146,8,1) 22%, rgba(245,214,175,0.12648809523809523) 49%);
+  width: 129.54px;
+  height: 129.54px;
+  border-radius: 100%;
+  border: none;
+  filter: blur(45px);
+  z-index: -5;
+  position: absolute;
+}
+.rainbow-circle-shadow-white{
+  background: linear-gradient(328deg, rgba(255,255,255,0) 36%, rgba(255,245,221,1) 93%);
+  width: 129.54px;
+  height: 129.54px;
+  border-radius: 100%;
+  border: none;
+  filter: blur(40px);
+  z-index: -7;
+  position: absolute;
+}
+
 .info-button {
   text-align: center;
   margin-top: 24px;
@@ -93,8 +179,8 @@ svg {
   font-weight: bold;
   cursor: pointer;
 }
-.faq-content{
-  margin-bottom:94px ;
+.faq-content {
+  margin-bottom: 94px;
 }
 .faq-structure {
   align-items: center;
@@ -102,7 +188,7 @@ svg {
   cursor: pointer;
   display: flex;
 }
-.faq-tittle{
+.faq-tittle {
   margin-bottom: 48px;
 }
 .faq {
@@ -111,6 +197,7 @@ svg {
   font-size: 29px;
   text-align: start;
   width: 590px;
+  font-family:'Mabry Pro', sans-serif; ;
 }
 .drop-down-arrow {
   width: 15.3px;
@@ -158,7 +245,6 @@ footer {
   width: 100%;
   font-size: 15px;
   justify-content: space-between;
-  
 }
 .footer-list ul {
   list-style: none;
@@ -166,10 +252,9 @@ footer {
   text-align: left;
   max-width: 245px;
   padding-right: 25px;
-  
 }
 
-.last-footer-list ul{
+.last-footer-list ul {
   padding-right: 0px;
 }
 .list-tittle {
@@ -200,7 +285,7 @@ footer {
   text-align: left;
 }
 
-.social-media-icons li{
+.social-media-icons li {
   padding-left: 9px;
   list-style: none;
 }
